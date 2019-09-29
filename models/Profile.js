@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
+
 const ProfileSchema = new mongoose.Schema({
-  // associate the profile with a specific user
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'user',
@@ -38,7 +38,7 @@ const ProfileSchema = new mongoose.Schema({
         type: String,
         required: true,
       },
-      stalocationtus: {
+      location: {
         type: String,
       },
       from: {
@@ -67,7 +67,7 @@ const ProfileSchema = new mongoose.Schema({
         type: String,
         required: true,
       },
-      fieldofstudie: {
+      fieldofstudy: {
         type: String,
         required: true,
       },
